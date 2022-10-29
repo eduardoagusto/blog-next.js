@@ -8,9 +8,9 @@ const Blog = ({ posts }) => {
       <h1>Posts</h1>
       <ul>
         {posts.map(({ slug, title }) => (
-          <li key={slug}>
+          <li key={slug} className="no-list">
             <Link href={`/${slug}`} legacyBehavior>
-              <a>{title}</a>
+              <a className="no-underline font-bold">{title}</a>
             </Link>
           </li>
         ))}

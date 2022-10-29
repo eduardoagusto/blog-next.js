@@ -1,17 +1,26 @@
 // tailwind.config.js
 module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
+    listStyleType: {
+      square: "square",
+    },
     extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
       typography: {
         DEFAULT: {
           css: {
-            a: {
-              color: "#3182ce",
-              "&:hover": {
-                color: "#2c5282",
-              },
+            "* , ::marker": {
+              color: "#e3e3e3",
+            },
+            "p,h1,h2,h3,li,em": {
+              fontFamily: "inter",
+            },
+            p: {
+              fontSize: "1rem",
             },
           },
         },
