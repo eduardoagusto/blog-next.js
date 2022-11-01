@@ -20,21 +20,21 @@ Os requisitos de usuário deverão fornecer, em forma de declarações, quais se
 
 **Requisitos funcionais:** definem as funções que o sistema, sobre como o sistema deve reagir a entradas específicas e sobre como se comportar em determinadas situações, os requisitos de usuários para um sistema devem descrever os requisitos funcionais e não funcionais, de forma que os usuários do sistema que não tenham conhecimentos técnicos detalhados consigam entender.
 
-- Exemplos de requisitos funcionais: o software deve possibilitar
-  o cálculo das comissões dos vendedores de acordo com os
-  produtos vendidos o software deve emitir relatórios de
-  compras e vendas por período o sistema deve mostrar,
-  para cada aluno, as disciplinas em que foi aprovado ou reprovado.
+> Exemplos de requisitos funcionais: o software deve possibilitar
+> o cálculo das comissões dos vendedores de acordo com os
+> produtos vendidos o software deve emitir relatórios de
+> compras e vendas por período o sistema deve mostrar,
+> para cada aluno, as disciplinas em que foi aprovado ou reprovado.
 
 **Requisitos não funcionais:** Requisitos não funcionais: são os requisitos relacionados com a utilização do software em termos de desempenho, confiabilidade, segurança, usabilidade e portabilidade, entre outros.
 
-- Exemplos de requisitos não funcionais: o sistema deve ser protegido
-  para acesso apenas de usuários autorizados; o tempo de resposta do
-  sistema não deve ultrapassar 20 segundos; o tempo de desenvolvimento
-  não deve ultrapassar doze meses.
+> Exemplos de requisitos não funcionais: o sistema deve ser protegido
+> para acesso apenas de usuários autorizados; o tempo de resposta do
+> sistema não deve ultrapassar 20 segundos; o tempo de desenvolvimento
+> não deve ultrapassar doze meses.
 
 > As sementes das principais catástrofes de software são normalmente semeadas nos três primeiros meses do projeto de software.
-> **(Capers Jones) **
+> **(Capers Jones)**
 
 ---
 
