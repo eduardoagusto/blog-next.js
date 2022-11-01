@@ -3,9 +3,6 @@ module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false,
   theme: {
-    listStyleType: {
-      square: "square",
-    },
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
