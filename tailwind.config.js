@@ -4,19 +4,20 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
-      fontFamily: {
-        inter: ["Inter", "sans-serif"],
+      animation: {
+        "spin-slow": "spin 100s linear infinite",
       },
+
       typography: {
         DEFAULT: {
           css: {
-            "* , ::marker": {
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+            },
+            "*": {
               color: "#e3e3e3",
             },
-            "p,h1,h2,h3,li,em": {
-              fontFamily: "inter",
-            },
-            p: {
+            "p,li": {
               fontSize: "1rem",
             },
           },

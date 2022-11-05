@@ -16,7 +16,7 @@ Os requisitos de sistema são as descrições mais detalhadas sobre as funções
 Os requisitos de usuário deverão fornecer, em forma de declarações, quais serviços o sistema deverá oferecer e as restrições com as quais deve operar.
 
 > A parte mais difícil ao construir um sistema de software é decidir o que construir. Nenhuma parte do trabalho afeta tanto o sistema resultante se for feita a coisa errada e nenhuma outra parte é mais difícil de consertar depois.
-> **(Frederick Phillips Brooks Jr.) **
+> **(Frederick Phillips Brooks Jr.)**
 
 **Requisitos funcionais:** definem as funções que o sistema, sobre como o sistema deve reagir a entradas específicas e sobre como se comportar em determinadas situações, os requisitos de usuários para um sistema devem descrever os requisitos funcionais e não funcionais, de forma que os usuários do sistema que não tenham conhecimentos técnicos detalhados consigam entender.
 
