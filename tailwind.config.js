@@ -21,6 +21,9 @@ module.exports = {
             "p,li": {
               fontSize: "1rem",
             },
+            hr: {
+              width: "60%",
+            },
           },
         },
       },

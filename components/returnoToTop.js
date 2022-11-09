@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { GoArrowUp } from "react-icons/go";
+import { HiChevronUp } from "react-icons/hi";
 
 export const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 500) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -28,16 +28,19 @@ export const ScrollToTop = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-8 right-8">
+    <div className="fixed md:bottom-8 md:right-8 bottom-4 right-4 ">
       <button
         type="button"
         onClick={scrollToTop}
         className={classNames(
-          isVisible ? "opacity-100" : "opacity-0",
-          "bg-teal-400 hover:bg-teal-600 inline-flex items-center rounded-full p-1 text-white shadow-sm transition-opacity "
+          isVisible ? "visible" : "invisible",
+          "p-2 inline-flex items-center animate-bounce "
         )}
       >
-        <GoArrowUp className="h-5 w-5 text-zinc-900" aria-hidden="true" />
+        <HiChevronUp
+          className="md:h-8 md:w-8 h-6 w-6 text-teal-400 hover:text-teal-600 "
+          aria-hidden="true"
+        />
       </button>
     </div>
   );

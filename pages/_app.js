@@ -7,7 +7,7 @@ import { ScrollToTop } from "../components/returnoToTop";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen h-64">
         <Head>
           <title>Square</title>
           <link
@@ -17,7 +17,11 @@ function MyApp({ Component, pageProps }) {
           ></link>
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap" />
         </Head>
         <Header />
