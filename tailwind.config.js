@@ -24,6 +24,9 @@ module.exports = {
             hr: {
               width: "60%",
             },
+            pre: {
+              backgroundColor: "#18181b",
+            },
           },
         },
       },

@@ -120,3 +120,142 @@ date: "09/11/2022"
     `<div title="Text title">Conteúdo</div>`
 
     _Não existe alteração visual do conteúdo, mas quando descansar o mouse em cima do elemento, será visualizado "Text title"._
+
+---
+
+**Aninhamento de tag's /Hierarquia**
+
+> No exemplo a tag `<p>` é pai da tag `<em>`, então o `<em>` deve ser fechado antes da tag `<p>`.
+
+    <p>Lorem <em> qualquer Ipsum</em></p>
+
+---
+
+**Fluxo de leitura do HTML**
+
+> Cada tag é lida com a ordem de invocação no código, um abaixo do outro.
+
+---
+
+#### **Posicionamento default do HTML**
+
+Alguns exemplos como:
+
+algumas tag's tem seu posicionamento default, sempre que invocadas se comportam de maneira diferentes de outros elementos.
+
+    <p> Sempre que invocada não haverá quebra de linha</p>
+    <br> --> break row, elemento para quebra de linhas no HTML.
+
+_Boa prática em relação a acessibilidade na web o uso moderado desse elemento._
+
+---
+
+#### **Elementos Genéricos**
+
+`<div>` Esse elemento traz uma formatação por default ao HTML. Sua utilização tem como objetivo de criar um bloco de elementos que devem ser mantidos juntos.
+
+`<span>` Também é um tipo de elemento genérico, mas tem como utilidade, separar linhas diferentes de texto, facilitando muito na estilização com CSS.
+
+---
+
+#### **Hyperlinks - Elementos âncora**
+
+**Atributos:**
+
+1. **globais** (`id, class, target`);
+
+2. **href**
+
+- **_url_**;
+
+  `<a href="www.google.com"></a>`
+
+  _Esse tipo de referência nos direciona ao link url descrito_
+
+- **_fragmento_**;
+
+  `<a href="#sobremim"></a>`
+
+  _Esse tipo de referência nos leva a outra parte do site acessado no momento_
+
+  www.meusite.com/#sobremim
+
+- **_email_**;
+
+  `<a href="mailto:exemplo@exemplo.com"></a>`
+
+  _Ira nos direcionar ao e-mail descrito no código utilizando o e-mail padrão do sistema operacional_
+
+- **_telefone_**;
+
+  `<a href="tel:+551699993333"></a>`
+
+  _Ira nos direcionar a uma chamada ao número descrito no código utilizando o navegador_
+
+3. **download**;
+
+4. **target**
+
+- **_\_self_** (padrão/default);
+
+  `<a href="www.google.com"></a>`
+
+  _ou_
+
+  `<a href="www.google.com" target="_self"></a>`
+
+  _Esta propriedade é utilizada como default do navegador, irá abrir o link url na tab atual utilizada pelo usuário._
+
+- **_\_blank_**;
+
+  `<a href="www.google.com" target="_blank"></a>`
+
+  _Utilizando essa propriedade do atributo target irá abrir o link url descrito em uma nova tab, mantendo a página atual aberta._
+
+---
+
+#### **Aninhando hyperlinks**
+
+    <a href="https://google.com" title="Ir para o Google">
+    	 <h1>Qualquer conteúdo</h1>
+    	 <p>É possível ser um hyperlink</p>
+    	 <img>
+    </a>
+
+---
+
+#### **Navegação entre diretórios**
+
+    index.html
+    main.html
+    nova pasta
+    	conteudo.html
+
+    apontando para o mesmo diretório:
+    main.html --> <a href="index.html"></a>
+
+    apontado para um diretório filho:
+    index.html --> <a href="nova-pasta/conteudo.html"></a>
+
+    apotando/voltando para o diretório pai:
+    conteudo.html --> <a href="../index.html"></a>
+
+---
+
+#### **URLs absolutas e relativas**
+
+1. Absoluto
+
+- Inclui o protocolo _http_ e o nome do domínio;
+
+`<a href="https://google.com">Estamos dizendo para direcionar ao site referenciado</a>`
+
+- Sempre apontará para o mesmo local, pois é absoluto.
+
+2. Relativos
+
+- Relativo à página aberta no momento;
+
+  `<a href="google.com">Aqui estamos dizemos para procurar na página atual um diretório chamado "google.com"</a>`
+
+- Apontará para diretórios em lugares diferentes.
