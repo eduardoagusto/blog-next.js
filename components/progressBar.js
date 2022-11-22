@@ -8,7 +8,6 @@ export function useReadingProgress() {
       const currentProgress = window.scrollY;
 
       let scrollHeight = document.body.scrollHeight - window.innerHeight;
-      console.log(currentProgress);
       if (scrollHeight) {
         setCompletion(
           Number((currentProgress / scrollHeight).toFixed(2)) * 100
