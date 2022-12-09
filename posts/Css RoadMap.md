@@ -185,13 +185,13 @@ Seletores de classe utiliza o atributo `class` como parâmetro de seleção, nel
 
 Cada tipo de seletor, possui um valor a ser considerado e calculado.
 
-| Valor | Tipo de seletor       |
-| ----- | --------------------- |
-| 0     | Global selector \*    |
-| 1     | Element type selector |
-| 10    | Class Selector        |
-| 100   | ID selector           |
-| 1000  | Inline                |
+    | Valor | Tipo de seletor       |
+    | ----- | --------------------- |
+    | 0     | Global selector \*    |
+    | 1     | Element type selector |
+    | 10    | Class Selector        |
+    | 100   | ID selector           |
+    | 1000  | Inline                |
 
 O maior valor de seletor terá maior importância na interpretação da declaração.
 
