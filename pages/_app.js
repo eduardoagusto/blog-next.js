@@ -3,6 +3,7 @@ import "tailwindcss/tailwind.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import { ScrollToTop } from "../components/returnoToTop";
+import NavBar from "../components/progressBar";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -24,10 +25,11 @@ function MyApp({ Component, pageProps }) {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap" />
       </Head>
       <Header />
-      <ScrollToTop />
-      <main className="mb-7 mx-auto p-6 rounded prose md:prose-lg xl:prose-xl flex-1">
+      <NavBar />
+      <main className="md:mb-7 mx-auto p-6 rounded prose md:prose-lg xl:prose-xl flex-1">
         <Component {...pageProps} />
       </main>
+      <ScrollToTop />
       <Footer />
     </>
   );

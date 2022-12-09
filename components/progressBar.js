@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { HiCurrencyBangladeshi } from "react-icons/hi";
 
 export function useReadingProgress() {
   const [completion, setCompletion] = useState(0);
@@ -8,7 +7,9 @@ export function useReadingProgress() {
       const currentProgress = window.scrollY;
 
       let scrollHeight = document.body.scrollHeight - window.innerHeight;
+
       if (scrollHeight) {
+        console.log(currentProgress);
         setCompletion(
           Number((currentProgress / scrollHeight).toFixed(2)) * 100
         );

@@ -8,12 +8,10 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html className="bg-zinc-900 h-screen">
         <Head />
-        <body className="bg-zinc-900">
-          <Main />
-          <NextScript />
-        </body>
+        <Main />
+        <NextScript />
       </Html>
     );
   }
